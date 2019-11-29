@@ -28,7 +28,7 @@ public class EmployeeService {
 	}
 	
 	//create new employee
-	public void createEmployee(Employee employee) {
-		employeeRepository.save(employee);
+	public Employee createEmployee(Employee employee) {
+		return employeeRepository.save(employee);
 	}
 }

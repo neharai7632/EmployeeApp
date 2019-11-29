@@ -14,7 +14,7 @@ public class Employee {
 	private String lastName;
 	private String gender;
 	private String department;
-	private LocalDate dob;
+	private String dob;
 	
 	public String getId() {
 		return id;
@@ -46,10 +46,10 @@ public class Employee {
 	public void setDepartment(String department) {
 		this.department = department;
 	}
-	public LocalDate getDob() {
+	public String getDob() {
 		return dob;
 	}
-	public void setDob(LocalDate dob) {
+	public void setDob(String dob) {
 		this.dob = dob;
 	}
 	

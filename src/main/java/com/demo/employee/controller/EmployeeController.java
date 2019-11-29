@@ -23,8 +23,7 @@ public class EmployeeController {
 	}
 	
 	@RequestMapping(method=RequestMethod.POST,value="/register")
-	public void registerEmployee(@RequestBody Employee employee) {
-		 employeeService.createEmployee(employee);
-		 System.out.println(employeeService.getAllEmployes().get(0).getDob());
+	public Employee registerEmployee(@RequestBody Employee employee) {
+		return  employeeService.createEmployee(employee);
 	}
 }
